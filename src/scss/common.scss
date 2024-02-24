@@ -1,0 +1,23 @@
+body{
+	font-family: Muller;
+	font-weight: 400;
+	color: #fff;
+	font-size:1.1875rem;
+	background: linear-gradient(223deg, #1e0c00 0%, #1f0700 31.43%, #170a00 69.37%, #1e0d00 100%);
+}
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+}
+.home{
+	flex: 1 1 auto;
+}
+[class*="__container"]{
+	max-width: em(1283);
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	margin: 0 auto;
+}
+

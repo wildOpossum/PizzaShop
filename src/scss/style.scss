@@ -1,0 +1,16 @@
+@use "sass:math";
+
+@import './mixins/mixins';
+/* --Icon fonts-- */
+@import 'font';
+/* --Fonts */
+@import 'fonts';
+/* --Reset Styles-- */
+@import 'normalize';
+/* --Common Styles-- */
+@import 'common';
+/* --Common Styles-- */
+@import 'header';
+/* --Footer-- */
+@import 'footer';
+
