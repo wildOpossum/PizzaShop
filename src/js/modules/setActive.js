@@ -1,12 +1,12 @@
 'use strict';
 
-function setActive () {
-	const parrent = document.querySelector('.menu__body');
+function setActive ({parrentSelector, targetSelector}) {
+	const parrent = document.querySelector(parrentSelector);
 
 	parrent.addEventListener('click', (event) => {
-		const navItem = event.target.closest('.menu__link');
+		const navItem = event.target.closest(targetSelector);
 		if(!navItem.classList.contains('active')){
-			const activeNavItem = document.querySelector('.menu__link.active');
+			const activeNavItem = document.querySelector(`${targetSelector}.active`);
 			activeNavItem.classList.remove('active');
 			navItem.classList.add('active');
 		}
