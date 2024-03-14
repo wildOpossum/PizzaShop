@@ -149,10 +149,6 @@
 				-webkit-text-fill-color: transparent;
 				transition: all 0.9s;
 			}
-			&:hover::before{				
-				left: 50%;				
-				opacity: 1;												
-			}
 		}
 		.active::before{
 			opacity: 1;
@@ -197,7 +193,7 @@
 		}
 		@media(any-hover: hover){
 			&:hover{
-				background: linear-gradient(115deg, #ff5d29 0%, #fe9c1c 100%);
+				box-shadow: 0 8px 34px 0 rgba(255, 106, 0, 0.425);;
 			}			
 		}
 		@media(max-width:  em(767.98)){
@@ -233,7 +229,7 @@
 		align-items: center;
 		@media(any-hover: hover){
 			&:hover{
-				background: linear-gradient(115deg, #ff5d29 0%, #fe9c1c 100%);
+				box-shadow: 0 8px 34px 0 rgba(255, 106, 0, 0.425);
 			}			
 		}
 		@media(max-width:  em(767.98)){

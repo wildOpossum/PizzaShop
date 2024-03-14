@@ -7,12 +7,13 @@
 	
 	<div class="wrapper">
 		@@include('html/header.html', {})
-		<div class="home">
-
-		</div>
+		<main class="page">
+			@@include('html/main-section.html', {})
+			@@include('html/pizza-menu.html', {})
+			@@include('html/abount-us.html', {})
+		</main>
 		@@include('html/footer.html', {})
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script> 
 </body>
 </html>

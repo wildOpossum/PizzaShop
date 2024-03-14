@@ -11,6 +11,15 @@
 @import 'common';
 /* --Common Styles-- */
 @import 'header';
+@import 'common';
+/* --Main-section Styles-- */
+@import 'main-section';
+/* --Pizza Styles -- */
+@import 'pizza-menu';
+/* --Abount us -- */
+@import 'abount-us';
 /* --Footer-- */
 @import 'footer';
+/* --Not Found-- */
+@import '404/notFound';
 
