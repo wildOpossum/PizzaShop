@@ -273,46 +273,13 @@
 	// .pizza-order__total
 
 	&__total {
-		display: flex;
-		justify-content: space-between;
-		width: 85px;		
-		text-align: center;
-		align-items: center		
+			
 	}
 
 	// .pizza-order__count
 
 	&__count {
-		border-radius: 50%;
-		width: 23px;
-		height: 23px;
-		border-radius: 50%;
-		border: 1.5px solid #a3a3a3;
-		font-size: 17px;
-		flex: 0 0 23px;
-		align-self: center;
-		position: relative;
-		transition: all 0.5s;
-		span, span::before{
-			content: "";
-			position: absolute;
-			width: 8px;
-			height: 1.25px;
-			background-color: #a3a3a3;
-			margin: 0 auto;
-			left: 50%;
-			transform: translate(-50%, 0);
-		}
-		@media(any-hover: hover){
-			&:hover{
-				transition: all 0.5s;
-				border-color: #ff6432;
-			}
-			&:hover span, &:hover span::before{
-				background-color: #ff6432;
-				transition: all 0.5s;
-			}
-		}
+		
 	}
 
 	// .pizza-order__couter

@@ -55,9 +55,78 @@ body{
 	box-shadow: 0 8px 34px 0 rgba(255, 107, 0, 0.06);
 	background: linear-gradient(215deg, #ff5924 0%, #ffa229 100%);
 	border-radius: 50px;
+	transition: all 0.5s;
 	@media(any-hover: hover){
 		&:hover{
 			box-shadow: 0 8px 34px 0 rgba(255, 106, 0, 0.425);
 		}
 	}
+}
+
+.counter {
+	display: flex;
+	justify-content: space-between;
+	width: 85px;		
+	text-align: center;
+	align-items: center	
+}
+.counter-general{
+	border-radius: 50%;
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		border: 1.5px solid #a3a3a3;
+		font-size: 17px;
+		flex: 0 0 23px;
+		align-self: center;
+		position: relative;
+		transition: all 0.5s;
+		span, span::before{
+			content: "";
+			position: absolute;
+			width: 8px;
+			height: 1.25px;
+			background-color: #a3a3a3;
+			margin: 0 auto;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+		@media(any-hover: hover){
+			&:hover{
+				transition: all 0.5s;
+				border-color: #ff6432;
+			}
+			&:hover span, &:hover span::before{
+				background-color: #ff6432;
+				transition: all 0.5s;
+			}
+		}
+
+}
+.trash {
+	cursor: pointer;
+	transition: all 0.5s;
+	@media(any-hover: hover){
+		&:hover{
+			color: #dc2626;
+		}
+		&:hover path{
+			stroke: #dc2626;
+		}			
+	}
+		svg{
+			position: relative;
+			top: 3px;
+			width: 19px;
+			height: 19px;
+			@media(any-hover: hover){			
+			&:hover path{
+				stroke: #dc2626;
+			}			}
+			path {
+				transition: stroke 0.5s;
+				stroke: #fff;
+				stroke-width: 1.5;
+			}
+		}
 }
