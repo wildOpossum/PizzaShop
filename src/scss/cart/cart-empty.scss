@@ -1,0 +1,53 @@
+.page-cart-empty {
+}
+.cart-empty {
+
+		// .cart-empty__container
+
+		&__container {
+			text-align: right;
+		}
+
+		// .cart-empty__btn
+
+		&__btn {
+			margin-bottom: 35px;
+			display: inline-block;
+		}
+
+		// .cart-empty__image
+
+		&__image {
+			position: relative;
+			height: 200px;			
+			img{
+				position: absolute;
+				top: 0;
+				left: 50%;				
+				width: 180px;
+				transform: translateX(-50%);
+			}
+		}
+
+		// .cart-empty__title
+
+		&__title {
+			background-image: linear-gradient(to left, #ff6432 0%, #ffa228 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 30px;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+
+		// .cart-empty__text
+
+		&__text {
+			padding-bottom: 20px;
+			font-size: 21px;
+			text-align: center;
+		}
+}
+.btn {
+}
