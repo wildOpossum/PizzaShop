@@ -1,6 +1,45 @@
 <section class="page__pizza-menu pizza-menu">
 	<div class="pizza-menu__container">
 		<h2 class="pizza-menu__title title">Menu</h2>
+		<div class="pizza-menu__advanced advanced-menu">
+			<div class="advanced-menu__search">
+				<form class="advanced-menu__form" >
+					<input placeholder="search" name="search" type="text" class="advanced-menu__input"></input>
+					<button class="advanced-menu__btn">
+						<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+						<svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z" fill="#1C274C"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#1C274C"/>
+						</svg>
+					</button>					
+				</form>
+			</div>
+			<div class="pizza-menu__sorting sorting">
+				<div class="sorting__select ">
+					<span>Sort:</span>
+					<span class="sorting__toggle">by popularity</span>
+					<div class="sorting__popup popup-sorting">
+						<ul>
+							<li>
+								by popularity
+							</li>
+							<li>
+								Alphabetical ↑
+							</li>
+							<li>
+								Alphabetical ↓
+							</li>
+							<li>
+								price: Low to High ↑
+							</li>
+							<li>
+								price: High to Low ↓
+							</li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="pizza-menu__items items-pizza">
 			<nav class="items-pizza__navigation">
 				<button data-pizza-type="" class="items-pizza__type active">Show All</button>
@@ -10,7 +49,7 @@
 				<button data-pizza-type="mr" class="items-pizza__type button ">Mushroom</button>
 			</nav>
 			<div class="items-pizza__body">
-				<div data-work-type="mt" class="items-pizza__item item-pizza">
+				<div data-pizza-type="mt" class="items-pizza__item item-pizza">
 					<a href="" class="item-pizza__image">
 						<img src="@img/pizza-menu/Capricciosa.png" alt="Capricciosa">
 					</a>
@@ -33,7 +72,7 @@
 					</div>
 					<button class="item-pizza__btn btn">Order Now</button>
 				</div>
-				<div data-work-type="mr" class="items-pizza__item item-pizza">
+				<div data-pizza-type="mr" class="items-pizza__item item-pizza">
 					<div class="item-pizza__image">
 						<img src="@img/pizza-menu/venezia.png" alt="Venecia">
 					</div>
@@ -56,7 +95,7 @@
 					</div>
 					<button class="item-pizza__btn btn">Order Now</button>
 				</div>
-				<div data-work-type="vg" class="items-pizza__item item-pizza">
+				<div data-pizza-type="vg" class="items-pizza__item item-pizza">
 					<div class="item-pizza__image">
 						<img src="@img/pizza-menu/meat.png" alt="meat">
 					</div>
@@ -79,7 +118,7 @@
 					</div>
 					<button class="item-pizza__btn btn">Order Now</button>
 				</div>
-				<div data-work-type="mt" class="items-pizza__item item-pizza">
+				<div data-pizza-type="mt" class="items-pizza__item item-pizza">
 					<div class="item-pizza__image">
 						<img src="@img/pizza-menu/cheese.png" alt="Cheese">
 					</div>
@@ -102,7 +141,7 @@
 					</div>
 					<button class="item-pizza__btn btn">Order Now</button>
 				</div>
-				<div data-work-type="sp" class="items-pizza__item item-pizza">
+				<div data-pizza-type="sp" class="items-pizza__item item-pizza">
 					<div class="item-pizza__image">
 						<img src="@img/pizza-menu/Argentina.png" alt="Argentina">
 					</div>
@@ -125,7 +164,7 @@
 					</div>
 					<button class="item-pizza__btn btn">Order Now</button>
 				</div>
-				<div data-work-type="mt" class="items-pizza__item item-pizza">
+				<div data-pizza-type="mt" class="items-pizza__item item-pizza">
 					<div class="item-pizza__image">
 						<img src="@img/pizza-menu/mushroom.png" alt="mushroom">
 					</div>
@@ -148,7 +187,7 @@
 					</div>
 					<button class="item-pizza__btn btn">Order Now</button>
 				</div>
-				<div data-work-type="mr" class="items-pizza__item item-pizza">
+				<div data-pizza-type="mr" class="items-pizza__item item-pizza">
 					<div class="item-pizza__image">
 						<img src="@img/pizza-menu/Tomato.png" alt="Tomato">
 					</div>
@@ -171,7 +210,7 @@
 					</div>
 					<button class="item-pizza__btn btn">Order Now</button>
 				</div>
-				<div data-work-type="mt" class="items-pizza__item item-pizza">
+				<div data-pizza-type="mt" class="items-pizza__item item-pizza">
 					<div class="item-pizza__image">
 						<img src="@img/pizza-menu/italianx2.png" alt="Pizza Gia">
 					</div>
